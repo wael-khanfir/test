@@ -71,7 +71,15 @@
 			<artifactId>spring-boot-devtools</artifactId>
 		</dependency>
 	</dependencies>
-
+          <proxies>
+        <proxy>
+            <active>true</active>
+            <protocol>http</protocol>
+            <host>MYSQL</host>
+            <port>8084</port>
+            
+        </proxy>
+    </proxies>
 	<build>
 	
 		<plugins>
