@@ -84,6 +84,12 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+				<configuration>
+                    			<apiDocsUrl>http://localhost:8084/v3/api-docs</apiDocsUrl>
+                    			<outputFileName>openapi.json</outputFileName>
+                    			<outputDir>${project.basedir}/target/docs/asciidoc</outputDir>
+                		</configuration>
+
 			</plugin>
 
 			<plugin>
